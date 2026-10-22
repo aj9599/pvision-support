@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PVision Solar – Support & Datenschutz</title>
+<style>
+  :root { --bg:#fbfaf7; --fg:#1d1d1f; --muted:#6e6e73; --accent:#e8930c; --card:#ffffff; --line:#e6e3dc; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#141414; --fg:#f2f2f2; --muted:#a1a1a6; --card:#1e1e1e; --line:#2c2c2c; } }
+  body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:40px 16px 64px; }
+  h1 { font-size:30px; margin:0 0 4px; } h2 { font-size:21px; margin:36px 0 8px; } h3 { font-size:17px; margin:22px 0 4px; }
+  .sub { color:var(--muted); margin:0 0 24px; }
+  section { background:var(--card); border:1px solid var(--line); border-radius:16px; padding:8px 22px 18px; margin-top:20px; }
+  a { color:var(--accent); } ul { padding-left:20px; } .small { color:var(--muted); font-size:14px; }
+  nav a { margin-right:16px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>PVision Solar</h1>
+  <p class="sub">PV-Prognose &amp; Energiemanager für iPhone und iPad</p>
+  <nav><a href="#support">Support</a><a href="#datenschutz">Datenschutz</a><a href="#en">English</a></nav>
+
+  <section id="support">
+    <h2>Support</h2>
+    <p>Fragen, Fehler oder Wünsche? Schreib eine E-Mail an <a href="mailto:arnojungen@outlook.com">arnojungen@outlook.com</a>. Bitte nenne dein iPhone-Modell, die App-Version (Einstellungen → Info) und – falls du einen Logger nutzt – dessen Version.</p>
+    <h3>Häufige Fragen</h3>
+    <ul>
+      <li><b>Brauche ich einen Wechselrichter?</b> Nein. Ohne Anbindung ist PVision eine reine Prognose-App. Live-Daten gibt es mit Fronius-Wechselrichtern (lokale Solar API) oder dem PVision Logger auf einem Raspberry Pi.</li>
+      <li><b>Keine Live-Daten?</b> Prüfe, ob das iPhone im selben Netz wie Wechselrichter/Logger ist und PVision den Zugriff auf das lokale Netzwerk erlaubt ist (iOS-Einstellungen → PVision).</li>
+      <li><b>Die Prognose weicht ab?</b> Ausrichtung, Neigung und kWp der Dachflächen prüfen. Mit Messwerten lernt PVision die Eigenheiten deiner Anlage und wird mit der Zeit genauer.</li>
+    </ul>
+  </section>
+
+  <section id="datenschutz">
+    <h2>Datenschutzerklärung</h2>
+    <p class="small">Stand: 22. Oktober 2026</p>
+    <p>Verantwortlich: Arno Jungen, Schweiz · <a href="mailto:arnojungen@outlook.com">arnojungen@outlook.com</a></p>
+    <h3>Kurz gesagt</h3>
+    <p>PVision erhebt keine personenbezogenen Daten. Es gibt kein Konto, keine Werbung, keine Analyse- oder Tracking-Dienste. Der Entwickler erhält keine Daten aus der App.</p>
+    <h3>Daten auf deinem Gerät</h3>
+    <p>Anlagen, Dachflächen, Einstellungen, Messwerte und Lernwerte werden nur lokal auf deinem Gerät gespeichert (und mit dem Widget auf demselben Gerät geteilt). Löschst du die App, werden diese Daten gelöscht.</p>
+    <h3>Verbindungen, die die App aufbaut</h3>
+    <ul>
+      <li><b>Wetterdaten:</b> Open-Meteo (open-meteo.com). Übermittelt werden die Koordinaten deiner Anlage, um die Wettervorhersage abzurufen.</li>
+      <li><b>Geländehorizont:</b> PVGIS der Gemeinsamen Forschungsstelle der EU-Kommission (re.jrc.ec.europa.eu). Übermittelt werden die Koordinaten der Anlage.</li>
+      <li><b>Deine eigenen Geräte:</b> Wechselrichter und PVision Logger im lokalen Netzwerk bzw. unter einer Adresse, die du selbst einträgst. Diese Daten bleiben zwischen deinem Gerät und deinen Geräten.</li>
+      <li><b>Fronius Solar.web (optional):</b> nur wenn du selbst Zugangsdaten einträgst, werden Anlagendaten bei Fronius abgefragt.</li>
+    </ul>
+    <p>Die genannten Dienste erhalten technisch bedingt deine IP-Adresse; es gelten deren Datenschutzbestimmungen.</p>
+    <h3>Berechtigungen</h3>
+    <ul>
+      <li><b>Lokales Netzwerk:</b> um deinen Wechselrichter oder Logger zu erreichen.</li>
+      <li><b>Standort (optional):</b> nur für den Kompass und die Standortsuche beim Einrichten einer Anlage; der Standort wird nicht gespeichert oder weitergegeben.</li>
+      <li><b>Bewegungssensoren:</b> für den Neigungsmesser.</li>
+    </ul>
+    <h3>Deine Rechte</h3>
+    <p>Da keine Daten beim Entwickler gespeichert werden, gibt es nichts herauszugeben oder zu löschen. Bei Fragen erreichst du mich unter der oben genannten E-Mail-Adresse.</p>
+  </section>
+
+  <section id="en" lang="en">
+    <h2>English</h2>
+    <h3>Support</h3>
+    <p>Questions or problems? Email <a href="mailto:arnojungen@outlook.com">arnojungen@outlook.com</a> with your device model and app version. PVision works without any inverter as a forecast app; live data needs a Fronius inverter (local Solar API) or the PVision Logger on a Raspberry Pi on your network.</p>
+    <h3>Privacy Policy</h3>
+    <p class="small">Effective 22 October 2026 · Controller: Arno Jungen, Switzerland</p>
+    <p>PVision collects no personal data. There is no account, no advertising and no analytics or tracking; the developer receives no data from the app. Your systems, settings and measurements are stored only on your device.</p>
+    <p>The app connects to: Open-Meteo (weather – your system's coordinates are sent), PVGIS by the EU Joint Research Centre (terrain horizon – coordinates are sent), your own inverter and logger at addresses you enter, and Fronius Solar.web only if you add credentials yourself. These services receive your IP address for technical reasons.</p>
+    <p>Permissions: local network (to reach your inverter/logger), location (optional, compass and location search only, not stored), motion (inclinometer).</p>
+  </section>
+</main>
+</body>
+</html>
